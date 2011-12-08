@@ -1,5 +1,5 @@
 {
-	"ignored_packages": ["Vintage"],
+  "ignored_packages": ["Vintage"],
   "file_exclude_patterns": ["*.sassc", "*.scssc", "*.log", "*.gem"],
   "tree_animation_enabled": false,
   "show_tab_close_buttons": false,
