@@ -10,6 +10,12 @@ On OS X, these files would reside in:
 
 ---
 
+Also, I am using the RailsCasts (TextMate) theme, which works fine in Sublime. You can download that theme here:
+
+http://railscasts.com/about
+
+---
+
 Note: I am using SublimeLinter, which auto-validates JavaScript files via JSHint (as well as other languages).
 
 https://github.com/Kronuz/SublimeLinter
@@ -21,9 +27,3 @@ So, that's what this code pertains to:
       "expr": true,
       "eqeqeq": true
     }
-
----
-
-Also, I am using the RailsCasts (TextMate) theme, which works fine in Sublime. You can download that theme here:
-
-http://railscasts.com/about
