@@ -10,7 +10,7 @@ On OS X, these files would reside in:
 
 ---
 
-Also, I am using the RailsCasts (TextMate) theme, which works fine in Sublime. You can download that theme here:
+I am using the RailsCasts (TextMate) theme, which works fine in Sublime. You can download that theme here:
 
 http://railscasts.com/about
 
