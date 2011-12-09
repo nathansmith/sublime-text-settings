@@ -1,6 +1,6 @@
 {
   "ignored_packages": ["Vintage"],
-  "file_exclude_patterns": ["*.sassc", "*.scssc", "*.log", "*.gem"],
+  "file_exclude_patterns": ["*.sassc", "*.scssc", "*.log", "*.gem", "*.gz"],
   "tree_animation_enabled": false,
   "show_tab_close_buttons": false,
   "close_windows_when_empty": true,
