@@ -1,8 +1,35 @@
 {
-  "ignored_packages": ["Vintage"],
-  "file_exclude_patterns": ["*.sassc", "*.scssc", "*.log", "*.gem", "*.gz"],
+  "binary_file_patterns": ["*.psd"],
   "tree_animation_enabled": false,
-  "show_tab_close_buttons": false,
   "close_windows_when_empty": true,
-  "use_simple_full_screen": true
+  "show_tab_close_buttons": false,
+  "use_simple_full_screen": true,
+  "theme": "Soda Light.sublime-theme",
+  "open_files_in_new_window": false,
+  "remember_open_files": false,
+  "ignored_packages": [
+    "Vintage"
+  ],
+  "folder_exclude_patterns": [
+    ".sass-cache",
+    ".git"
+  ],
+  "file_exclude_patterns": [
+    "*.sassc",
+    "*.scssc",
+    "*.log",
+    "*.gem",
+    "*.gz",
+    "*.jpg",
+    "*.jpeg",
+    "*.png",
+    "*.gif",
+    "*.pdf",
+    "*.zip",
+    "*.DS_store",
+    "*.eot",
+    "*.svg",
+    "*.ttf",
+    "*.woff"
+  ]
 }
