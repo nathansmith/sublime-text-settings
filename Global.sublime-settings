@@ -5,7 +5,6 @@
   "show_tab_close_buttons": false,
   "use_simple_full_screen": true,
   "theme": "Soda Light.sublime-theme",
-  "open_files_in_new_window": false,
   "remember_open_files": false,
   "ignored_packages": [
     "Vintage"
