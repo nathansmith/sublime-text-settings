@@ -14,6 +14,11 @@
   "jshint_options": {
     "eqeqeq": true,
     "evil": false,
-    "expr": true
+    "expr": true,
+    "shadow": false,
+    "undef": true,
+    "curly": true,
+    "browser": true,
+    "jquery": true
   }
 }
