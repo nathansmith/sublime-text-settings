@@ -20,10 +20,4 @@ Note: I am using SublimeLinter, which auto-validates JavaScript files via JSHint
 
 https://github.com/Kronuz/SublimeLinter
 
-So, that's what this code pertains to:
-
-    "jshint_options": {
-      "evil": false,
-      "expr": true,
-      "eqeqeq": true
-    }
+So, that's what `jshint_options` pertains to.
