@@ -19,6 +19,12 @@
     "undef": true,
     "curly": true,
     "browser": true,
-    "jquery": true
+    "jquery": true,
+    "latedef": true,
+    "noarg": true,
+    "noempty": true,
+    "undef": true,
+    "onecase": false,
+    "newcap": true
   }
 }
