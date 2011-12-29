@@ -10,12 +10,6 @@ On OS X, these files would reside in:
 
 ---
 
-I am using the RailsCasts (TextMate) theme, which works fine in Sublime. You can download that theme here:
-
-http://railscasts.com/about
-
----
-
 Note: I am using SublimeLinter, which auto-validates JavaScript files via JSHint (as well as other languages).
 
 https://github.com/Kronuz/SublimeLinter
