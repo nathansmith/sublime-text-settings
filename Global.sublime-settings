@@ -6,6 +6,7 @@
   "use_simple_full_screen": true,
   "theme": "Soda Light.sublime-theme",
   "remember_open_files": false,
+  "detect_slow_plugins": false,
   "ignored_packages": [
     "Vintage"
   ],
