@@ -2,8 +2,6 @@
   <content><![CDATA[
 // `${1}
 //----------------------------------------------------------------------------------------------------
-
-${2}
 ]]></content>
   <tabTrigger>`</tabTrigger>
   <scope>source.sass, source.scss</scope>
