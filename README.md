@@ -1,6 +1,6 @@
 These are my settings for Sublime Text 2.
 
-http://sublimetext.com/2
+http://www.sublimetext.com/
 
 I made this repo for myself, so I have an easy way to back them up. But if you like 'em, or want to tweak to your liking, cool beans.
 
