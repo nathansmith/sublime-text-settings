@@ -1,0 +1,37 @@
+<snippet>
+  <content><![CDATA[
+// JSLint settings:
+/*global alert, console, jQuery, Zepto*/
+
+var ${1:APP} = (function(\$, window, document, undefined) {
+  \$(document).ready(function() {
+    ${1:APP}.go();
+  });
+
+  // Empty "private constant" vars.
+  var body;
+
+  return {
+    // ${1:APP}.go
+    go: function() {
+      var i, j = ${1:APP}.init;
+
+      for (i in j) {
+        // Run everything in ${1:APP}.init
+        j.hasOwnProperty(i) && j[i]();
+      }
+    },
+    init: {
+      // ${1:APP}.init.assign_dom_vars
+      assign_dom_vars: function() {
+        body = \$(document.body);
+      }
+    }
+  };
+
+// Parameters: Zepto/jQuery, window, document.
+})(typeof Zepto === 'function' ? Zepto : jQuery, this, this.document);
+]]></content>
+  <tabTrigger>module</tabTrigger>
+  <scope></scope>
+</snippet>
