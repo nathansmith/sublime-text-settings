@@ -8,7 +8,7 @@ var ${1:APP} = (function(\$, window, document, undefined) {
     ${1:APP}.go();
   });
 
-  // Empty "private constant" vars.
+  // "Private constant" vars.
   var body;
 
   return {
@@ -21,10 +21,18 @@ var ${1:APP} = (function(\$, window, document, undefined) {
         j.hasOwnProperty(i) && j[i]();
       }
     },
+    // ${1:APP}.init
     init: {
       // ${1:APP}.init.assign_dom_vars
       assign_dom_vars: function() {
         body = \$(document.body);
+      }
+    },
+    // ${1:APP}.misc
+    misc: {
+      // ${1:APP}.misc.do_something
+      do_something: function() {
+        // Not run on page load, but used later?
       }
     }
   };
