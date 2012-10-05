@@ -1,9 +1,9 @@
 {
-	"auto_upgrade_last_run": 1331051198,
+	"auto_upgrade_last_run": 1348499440,
 	"installed_packages":
 	[
+		"LESS",
 		"Package Control",
-		"SublimeLinter",
 		"Theme - Soda"
 	]
 }
