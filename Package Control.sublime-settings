@@ -1,9 +1,12 @@
 {
-	"auto_upgrade_last_run": 1348499440,
+	"auto_upgrade_last_run": 1353518956,
 	"installed_packages":
 	[
+		"CoffeeScript",
 		"LESS",
 		"Package Control",
+		"Sass",
+		"SublimeLinter",
 		"Theme - Soda"
 	]
 }

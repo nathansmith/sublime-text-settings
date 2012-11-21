@@ -1,36 +1,48 @@
 <snippet>
   <content><![CDATA[
 // JSLint settings:
-/*global alert, console, jQuery, Zepto*/
+/*global
+  alert,
+  console,
+  jQuery,
+  Zepto
+*/
 
 var ${1:APP} = (function(\$, window, document, undefined) {
   \$(document).ready(function() {
-    ${1:APP}.go();
+    ${1}.go();
   });
 
   // "Private constant" vars.
   var body;
 
   return {
-    // ${1:APP}.go
+    // ${1}.go
     go: function() {
-      var i, j = ${1:APP}.init;
+      var i, j = ${1}.init;
 
       for (i in j) {
-        // Run everything in ${1:APP}.init
+        // Run everything in ${1}.init
         j.hasOwnProperty(i) && j[i]();
       }
     },
-    // ${1:APP}.init
+    // ${1}.init
     init: {
-      // ${1:APP}.init.assign_dom_vars
+      // ${1}.init.assign_dom_vars
       assign_dom_vars: function() {
         body = \$(document.body);
+      },
+      // ${1}.init.stop_dead_links
+      stop_dead_links: function(ev) {
+        body.on('click', 'a[href="#"]', function(ev) {
+          // Stop that link!
+          ev.preventDefault();
+        });
       }
     },
-    // ${1:APP}.misc
-    misc: {
-      // ${1:APP}.misc.do_something
+    // ${1}.util
+    util: {
+      // ${1}.util.do_something
       do_something: function() {
         // Not run on page load, but used later?
       }
