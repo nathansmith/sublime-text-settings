@@ -13,6 +13,7 @@
 	"file_exclude_patterns":
 	[
 		"*.DS_store",
+		"*.cur",
 		"*.eot",
 		"*.gem",
 		"*.gif",
@@ -41,7 +42,7 @@
 		".bin"
 	],
 	"font_face": "Monaco",
-	"font_size": 14.0,
+	"font_size": 15.0,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -57,5 +58,6 @@
 	"trim_trailing_white_space_on_save": true,
 	"use_simple_full_screen": true,
 	"use_tab_stops": true,
+  "word_separators": "./\\()\"':,.;<>~!@#$%^&*|+=[]{}`~?",
 	"word_wrap": true
 }
