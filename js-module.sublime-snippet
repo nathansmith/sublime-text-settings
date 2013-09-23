@@ -2,9 +2,9 @@
   <content><![CDATA[
 // JSLint settings:
 /*global
-  alert,
-  console,
-  jQuery,
+  alert
+  console
+  jQuery
   Zepto
 */
 
@@ -15,6 +15,31 @@ var ${1:APP} = (function(\$, window, document, undefined) {
 
   // "Private constant" vars.
   var body;
+
+  // Active/Dynamic class names.
+  var on = 'on';
+  var dynamic = 'dynamic';
+  var dot_dynamic = '.' + dynamic;
+
+  // Determine if params string match
+  function test() {
+    var bool = false;
+    var str = arguments[0].toString();
+    var arr = Array.prototype.slice.call(arguments);
+    var i;
+
+    arr = arr.slice(1, arr.length);
+    i = arr.length;
+
+    while(i--) {
+      if (arr[i].toString() === str) {
+        bool = true;
+        break;
+      }
+    }
+
+    return bool;
+  }
 
   return {
     // ${1}.go
@@ -38,13 +63,55 @@ var ${1:APP} = (function(\$, window, document, undefined) {
           // Stop that link!
           ev.preventDefault();
         });
+      },
+      // ${1}.init.triggers
+      triggers: function() {
+        body.on('click', '*[data-js-trigger]', function() {
+          var el = \$(this);
+          var is_disabled = el.hasClass('button-disabled') || el.attr('disabled');
+          var trigger, target;
+
+          // Exit, if disabled
+          if (is_disabled) {
+            return;
+          }
+
+          // Target, if it exists
+          trigger = \$.trim(el.attr('data-js-trigger'));
+          target = \$('*[data-js-layer="' + trigger + '"]');
+
+          if (el.hasClass(dynamic)) {
+            APP.util.hide_dynamic_layers();
+          }
+          else {
+            APP.util.hide_dynamic_layers();
+            el.addClass(dynamic);
+            target.addClass(dynamic);
+          }
+        });
+      },
+      // ${1}.init.dynamic_layers
+      dynamic_layers: function() {
+        body.on('click', function(ev) {
+          var el = \$(ev.target);
+
+          // Is a link, with "Cancel" or "Close".
+          var is_cancel = el.is('a') && test(\$.trim(el.html()).toLowerCase(), 'cancel', 'close');
+
+          if (is_cancel) {
+            APP.util.hide_dynamic_layers();
+          }
+          else if (!el.closest('*[data-js-layer], *[data-js-trigger]').length) {
+            APP.util.hide_dynamic_layers();
+          }
+        });
       }
     },
     // ${1}.util
     util: {
-      // ${1}.util.do_something
-      do_something: function() {
-        // Not run on page load, but used later?
+      // ${1}.util.hide_dynamic_layers
+      hide_dynamic_layers: function() {
+        \$(dot_dynamic).removeClass(dynamic);
       }
     }
   };
