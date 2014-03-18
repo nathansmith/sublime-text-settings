@@ -35,6 +35,7 @@
   ],
   "folder_exclude_patterns":
   [
+    ".cache",
     ".sass-cache",
     ".git",
     ".hg",
