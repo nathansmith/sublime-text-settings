@@ -1,12 +1,8 @@
 {
   "auto_complete": false,
-  "binary_file_patterns":
-  [
-    "*.psd"
-  ],
   "close_windows_when_empty": true,
-  "color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
-  "detect_indentation": false,
+  "color_scheme": "Packages/User/Monokai Bright (SL).tmTheme",
+  "detect_indentation": true,
   "detect_slow_plugins": false,
   "drag_text": false,
   "draw_minimap_border": true,
@@ -22,8 +18,12 @@
     "*.jpeg",
     "*.jpg",
     "*.log",
+    "*.map",
+    "*.min.js",
+    "*.min.css",
     "*.pdf",
     "*.png",
+    "*.psb",
     "*.psd",
     "*.sassc",
     "*.scssc",
@@ -31,28 +31,34 @@
     "*.ttf",
     "*.woff",
     "*.xap",
-    "*.zip"
+    "*.zip",
+    "BrowserStackLocal"
   ],
   "folder_exclude_patterns":
   [
-    ".sass-cache",
+    ".bin",
+    ".cache",
     ".git",
     ".hg",
-    "dist",
-    ".bin"
+    ".sass-cache",
+    "bower_components",
+    "build",
+    "design_assets",
+    "kendoui",
+    "node_modules"
   ],
   "font_face": "Monaco",
-  "font_size": 15.0,
+  "font_size": 13,
   "highlight_line": true,
   "ignored_packages":
   [
+    "SublimeLinter-jshint",
     "Vintage"
   ],
   "remember_open_files": false,
   "scroll_past_end": true,
   "show_tab_close_buttons": false,
   "tab_size": 2,
-  "theme": "Soda Light.sublime-theme",
   "translate_tabs_to_spaces": true,
   "tree_animation_enabled": false,
   "trim_trailing_white_space_on_save": true,
